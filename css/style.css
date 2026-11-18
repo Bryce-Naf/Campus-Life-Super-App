@@ -1,7 +1,41 @@
 body {
-    background-color: white
+    background-color: rgb(225, 1, 1);
 }
 
 #navigation {
     font-size: 40px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: white;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: black;
+    color: rgb(153, 153, 153);
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
