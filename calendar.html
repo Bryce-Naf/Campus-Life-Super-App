@@ -17,6 +17,12 @@
     </header>
     <main>
         <h2 class="text-center">Campus Calendar</h2>
+        
+        <section class="calendar-card" aria-label="Campus calendar">
+            <p class="calendar-note">Green events mark U.S. federal holidays. Other listed events are examples, not official Grace College listings.</p>
+            <div id="calendar"></div>
+            <p id="calendar-status" class="calendar-status" role="status" aria-live="polite">Select a date to see it here.</p>
+        </section>
     </main>
     <footer>
         <h3 class="text-center mb-4">More Info</h3>
@@ -26,6 +32,10 @@
         </section>
         <p class="text-center">This website is not run by Grace College. This is a student made and run website. Any issues or legal rights are not the responsibility of Grace College and Seminary.</p>   
     </footer>
-    <script src="script.js"></script>
+    <script defer src="./node_modules/@fullcalendar/core/index.global.min.js"></script>
+    <script defer src="./node_modules/@fullcalendar/daygrid/index.global.min.js"></script>
+    <script defer src="./node_modules/@fullcalendar/timegrid/index.global.min.js"></script>
+    <script defer src="./node_modules/@fullcalendar/interaction/index.global.min.js"></script>
+    <script defer src="./js/script.js"></script>
 </body>
 </html>
