@@ -92,6 +92,22 @@ h2 {
     margin: 1rem 0 0;
 }
 
+.map-card {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.map-note {
+    color: #212529;
+}
+
+#campus-map {
+    width: 100%;
+    height: 600px;
+}
+
 .fc .calendar-holiday {
     --fc-event-bg-color: #198754;
     --fc-event-border-color: #146c43;
@@ -102,5 +118,14 @@ h2 {
     .calendar-card {
         margin: 0 0.75rem 1.5rem;
         padding: 0.75rem;
+    }
+
+    .map-card {
+        margin: 0 0.75rem 1.5rem;
+        padding: 0.75rem;
+    }
+
+    #campus-map {
+        height: 400px;
     }
 }

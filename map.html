@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
@@ -18,6 +19,11 @@
     <main>
         <h2 class="text-center">Campus Map</h2>
         
+        <section class="map-card" aria-label="Interactive campus map">
+            <p class="map-note">Drag to pan, use the map controls to zoom, or recenter on campus. Map tiles © OpenStreetMap contributors.</p>
+            <button id="center-campus" class="btn btn-danger mb-3" type="button">Center on campus</button>
+            <div id="campus-map" role="region" aria-label="Map centered on Grace Theological Seminary"></div>
+        </section>
     </main>
     <footer>
         <h3 class="text-center mb-4">More Info</h3>
@@ -27,6 +33,7 @@
         </section>
         <p class="text-center">This website is not run by Grace College. This is a student made and run website. Any issues or legal rights are not the responsibility of Grace College and Seminary.</p>
     </footer>
-    <script src="script.js"></script>
+    <script defer src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script defer src="./js/map.js"></script>
 </body>
 </html>
